@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Guess Ludo Game</title>
+</head>
+<body>
+
+<!--popup -->
+<div id="game-instructions" class="popup">
+    <div class="popup-content">
+        <span class="close-btn" onclick="closePopup()">&times;</span>
+        <h2>Game Instructions</h2>
+        <p>You will play this game with Oday Cabdul. If you want to beat him, you need to guess the number he has in mind. If you can't guess it, he wins and will get a higher score 🧾</p>
+        <div class="avatar-container">
+            <br>
+            <img src="images/defaultPlayerIMG.avif" alt="Oday Cabdul Avatar">
+        </div>
+    </div>
+</div>
+
+    
+
+    <section class="game-sections">
+        <audio id="myAudio" src="music/ludomusic.mp3" autoplay loop></audio>
+        <audio id="diceAudio" src="" autoplay></audio>
+        <div class="game-info">
+            <div>
+            <img  src="images/you.avif" alt="">  
+            </div>
+            <h2>Your Score : <span class="scores">0💯</span></h2>
+            <button class="reset">Reset The Game🧹</button>
+        </div>
+
+        <div class="default-player">
+            <div>
+                <img src="images/defaultPlayerIMG.avif" alt="">
+            </div>
+            <div>
+            <p>Hey ! I Have A Number In My Mind Guess IF You Can😈</p>
+            <h2>Oday Abdul's Score : <span class="scores abdulscore">0💯</span></h2>
+        </div>
+        </div>
+
+        <div class="ludo-container">
+            <h6 class="result"></h6>
+           <div class="ludo">
+            <img class="ludo-img" src="ludos/dice-1.png" alt="">
+           </div>
+           <div class="play-btn-container">
+            <button class="play-btn">Play The Game▶️</button>
+           </div>
+        </div>
+
+    </section>
+
+    <section class="footer">
+        <p>Developed By SaedAbdullahi👽</p>
+    </section>
+
+    <script src="scripts/app.js"></script>
+    <script src="scripts/index.js"></script>
+</body>
+</html>
