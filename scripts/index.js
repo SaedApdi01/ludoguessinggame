@@ -31,7 +31,7 @@ function guessLudo(){
         gamesound.src = 'music/ludomusic.mp3'; 
       
         if(randomLudo === odayAbdulNumber){
-          score += 10;  
+          score += 5;  
           youScore.textContent = `${score}💯`;
           resultMessege.textContent = "Congratulations! You guessed the number✅"
           resultMessege.style.color = 'yellowgreen'; 
